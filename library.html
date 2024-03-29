@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Management System - Library</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="book-search">
+        <div class="container">
+            <h2>Search for Books</h2>
+            <input type="text" id="searchInput" onkeyup="searchBooks()" placeholder="Search by Title, Author, or ISBN">
+        </div>
+    </section>
+
+    <section id="book-list">
+        <div class="container">
+            <h2>Available Books</h2>
+            <div id="book-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th>Genre</th>
+                            <th>Availability</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="books">
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 University Management System</p>
+    </footer>
+
+    <script src="library.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Management System - Students</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <header>
+        <h1>Students</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <section id="student-form">
+        <div class="container">
+            <h2>Add or Update Student</h2>
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="text" id="roll" placeholder="Enter Roll Number">
+            <input type="text" id="email" placeholder="Enter Email">
+            <input type="text" id="phone" placeholder="Enter Phone Number">
+            <input type="text" id="address" placeholder="Enter Address">
+            <button onclick="addOrUpdateStudent()">Add Student</button>
+            <button onclick="clearForm()">Clear Form</button>
+        </div>
+    </section>
+
+    <section id="student-list">
+        <div class="container">
+            <h2>Student List</h2>
+            <div class="search">
+                <input type="text" id="searchInput" onkeyup="searchStudents()" placeholder="Search by Name or Roll Number">
+            </div>
+            <div id="student-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Roll Number</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Address</th>
+                            <th>Courses Enrolled</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="students"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 University Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

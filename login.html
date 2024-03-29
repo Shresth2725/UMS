@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - University Management System</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+        </div>
+        <h1>University Management System</h1>
+    </header>
+
+    <section id="login-form">
+        <div class="container">
+            <h2>Welcome Back!</h2>
+            <p>Please login to access the system.</p>
+            <form id="loginForm" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" onclick="login()">Login</button>
+            </form>
+            <p id="loginMessage"></p>
+            <p>Forgot your password? <a href="#">Reset Password</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 University Management System</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

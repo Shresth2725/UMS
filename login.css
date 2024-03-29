@@ -1,0 +1,112 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pic1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo img {
+    height: 50px; 
+}
+header h1 {
+    margin: 10px 0 0 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+section#login-form {
+    padding: 40px 0;
+}
+
+section#login-form .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section#login-form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section#login-form .form-group {
+    margin-bottom: 20px;
+}
+
+section#login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+section#login-form input[type="text"],
+section#login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+section#login-form input[type="text"]:focus,
+section#login-form input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+section#login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+section#login-form button:hover {
+    background-color: #0056b3;
+}
+
+#loginMessage {
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+}
+
+section#login-form p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+section#login-form p a:hover {
+    text-decoration: underline;
+}
